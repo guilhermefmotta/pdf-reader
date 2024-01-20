@@ -1,13 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Reader</title>
+    <title>PDF Reader App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
-<body>
 
-    <h1>PAGE</h1>
-    
+<body>
+    <div class="parallax-section">
+        <div class="parallax-background"></div>
+        <div class="content">
+            <h1>Title in the Center</h1>
+            <!-- <img src="web_home.png" alt="Centered Image" width="300px" height="350"> -->
+
+        </div>
+    </div>
+
+    <div class="two-column-section">
+        <div class="column">
+            <img src="web_home.png" alt="App Image">
+        </div>
+        <div class="column">
+            <p>Experience the beauty of simplicity with our streamlined and clutter-free interface. Navigate
+                effortlessly through our app, where each interaction is a visual delight. Immerse yourself in stunning
+                animations and a carefully crafted color palette, making every read journey with PDF Reader
+                a visual treat.</p>
+        </div>
+    </div>
+
+    <div class="new-section">
+        <div class="column">
+            <div class="three-steps-section">
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="column">
+                            <p>Select Language:</p>
+                            <p>Begin by choosing the language for both the text and audio. Our app caters to your
+                                linguistic preferences, ensuring a personalized translation experience.</p>
+                        </div>
+                        <div class="column">
+                            <img src="5.jpg" alt="Select Language Image">
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="column">
+                            <p>Choose Your Text:</p>
+                            <p>Select the specific text you want to translate. Whether it's a phrase, paragraph, or an
+                                entire document, our app makes it easy to pinpoint the content you need.</p>
+                        </div>
+                        <div class="column">
+                            <img src="4.jpg" alt="Choose Text Image">
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="column">
+                            <p>Click Translate:</p>
+                            <p>Once your text is selected, a convenient translate button will appear. Just click, and
+                                let the magic happen. Watch your text transform seamlessly, bridging language gaps
+                                effortlessly.</p>
+                        </div>
+                        <div class="column">
+                            <img src="3.jpg" alt="Click Translate Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="two-column-section">
+        <div class="column">
+            <img src="1.jpg" alt="App Image">
+        </div>
+        <div class="column">
+            <p>Elevate your translation experience with [Your App Name]'s Premium Version. Enjoy enhanced translation
+                capabilities, as our advanced algorithms provide a superior rendition of your text. Say goodbye to
+                language barriers with the power of neural voices, adding a natural and lifelike touch to your audio
+                translations.</p>
+        </div>
+    </div>
+
+    <!-- Add this new section to your HTML -->
+    <div class="new-section">
+        <div class="column">
+            <p>Exciting New Features!</p>
+            <p>We are thrilled to announce the addition of exciting new features to our PDF Reader app. Now, enjoy the
+                convenience of reading EPUB and Markdown (MD) files seamlessly within our app.</p>
+            <p>Whether you prefer the rich formatting options of EPUB or the simplicity of Markdown, our PDF Reader app
+                has you covered. Dive into a world of diverse content types with just a few taps.</p>
+            <p>Experience the joy of exploring a wide range of digital documents, from novels and stories in EPUB to
+                technical documents in Markdown. Our commitment to versatility ensures that you can access your favorite
+                content effortlessly.</p>
+            <p>Stay tuned for more updates as we continue to enhance your reading experience with innovative features
+                and file format support!</p>
+        </div>
+    </div>
+
+    <!-- Add this new section to your HTML -->
+    <div class="new-section">
+        <div class="column">
+            <p>Discover the Power of PDF Reader App!</p>
+            <p>Are you ready to elevate your reading experience? Find our PDF Reader app on the Google Play Store and
+                unlock a world of possibilities. Download now and enjoy seamless reading, advanced features, and a
+                user-friendly interface.</p>
+            <p>Whether you're a student, professional, or avid reader, our app is designed to cater to your needs.
+                Experience the convenience of managing and reading PDFs, EPUBs, and Markdown files in one place.</p>
+            <p>Don't miss out on the latest updates and enhancements. Join our community of satisfied users!</p>
+            <p>Download PDF Reader App on <a href="https://play.google.com/store/apps/your-app-package-name"
+                    target="_blank" rel="noopener noreferrer">Google Play</a></p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        // Simple parallax effect using JavaScript
+        window.addEventListener('scroll', function () {
+            const parallaxBackground = document.querySelector('.parallax-background');
+            const offset = window.pageYOffset;
+            parallaxBackground.style.backgroundPositionY = offset * 0.7 + 'px';
+        });
+
+
+        // Carousel script
+        let currentIndex = 0;
+
+        setInterval(() => {
+            const stepsContainer = document.querySelector('.steps-container');
+            const steps = document.querySelectorAll('.step');
+
+            currentIndex = (currentIndex + 1) % steps.length;
+
+            stepsContainer.style.transition = 'transform 0.5s ease-in-out';
+            stepsContainer.style.transform = 'translateX(' + (-currentIndex * steps[0].clientWidth) + 'px)';
+        }, 5000); 
+    </script>
 </body>
+
 </html>
