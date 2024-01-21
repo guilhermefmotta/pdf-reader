@@ -24,9 +24,9 @@
                     being part of our growing community!</p>
 
                 <img src="logo.png" alt="App Image" width="90" height="100"
-                    class="image animate__animated  animate__backInLeft" style="margin-top: 50px;">
+                    class="image animate__animated  animate__backInLeft">
 
-                <div class="downloads" style="margin-top:50px">
+                <div class="downloads">
                     <p>Discover the power of PDF Reader now!</p>
                     <a class="contact-link" href="https://github.com/YourUsername/YourApp" target="_blank">Contact Us on
                         GitHub 📣</a>
@@ -45,6 +45,7 @@
                 class="image animate__animated  animate__backInLeft">
         </div>
         <div class="column">
+            <h1 class="title-default">Clean Layout 👌</h1>
             <p class="animate__animated  animate__backInRight">Experience the beauty of simplicity with our streamlined
                 and clutter-free interface. Navigate
                 effortlessly through our app, where each interaction is a visual delight. Immerse yourself in stunning
@@ -53,44 +54,29 @@
         </div>
     </div>
 
-    <div class="new-section">
+    <div class="hwoks">
+
         <div class="column">
-            <div class="three-steps-section">
-                <div class="steps-container">
-                    <div class="step">
-                        <div class="column">
-                            <p>Select Language:</p>
-                            <p>Begin by choosing the language for both the text and audio. Our app caters to your
-                                linguistic preferences, ensuring a personalized translation experience.</p>
-                        </div>
-                        <div class="column">
-                            <img src="5.jpg" alt="Select Language Image" width="350" height="400" class="image">
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="column">
-                            <p>Choose Your Text:</p>
-                            <p>Select the specific text you want to translate. Whether it's a phrase, paragraph, or an
-                                entire document, our app makes it easy to pinpoint the content you need and click em
-                                translate</p>
-                        </div>
-                        <div class="column">
-                            <img src="4.jpg" alt="Choose Text Image" width="350" height="400" class="image">
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="column">
-                            <p>Result:</p>
-                            <p>Once your text is selected, a convenient translate button will appear. Just click, and
-                                let the magic happen. Watch your text transform seamlessly, bridging language gaps
-                                effortlessly.</p>
-                        </div>
-                        <div class="column">
-                            <img src="3.jpg" alt="Click Translate Image" width="350" height="400" class="image">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2 class="title-default">Select Language:</h2>
+            <img src="5.jpg" alt="Select Language Image" class="image" width="150" height="200">
+            <p>Begin by choosing the language for both the text and audio. Our app caters to your
+                linguistic preferences, ensuring a personalized translation experience.</p>
+        </div>
+
+        <div class="column">
+            <h2 class="title-default">Choose Your Text:</h2>
+            <img src="4.jpg" alt="Choose Text Image" class="image" width="150" height="200">
+            <p>Select the specific text you want to translate. Whether it's a phrase, paragraph, or an
+                entire document, our app makes it easy to pinpoint the content you need and click em
+                translate</p>
+        </div>
+
+        <div class="column">
+            <h2 class="title-default">Result:</h2>
+            <img src="3.jpg" alt="Click Translate Image" class="image" width="150" height="200">
+            <p>Once your text is selected, a convenient translate button will appear. Just click, and
+                let the magic happen. Watch your text transform seamlessly, bridging language gaps
+                effortlessly.</p>
         </div>
     </div>
 
@@ -100,14 +86,14 @@
                 class="image animate__animated  animate__backInLeft">
         </div>
         <div class="column animate__animated  animate__backInRight">
-            <p>Elevate your translation experience with [Your App Name]'s Premium Version. Enjoy enhanced translation
+            <h1 class="title-default">Improve your experience 🚀</h1>
+            <p>Elevate your translation experience with Premium Version. Enjoy enhanced translation
                 capabilities, as our advanced algorithms provide a superior rendition of your text. Say goodbye to
                 language barriers with the power of neural voices, adding a natural and lifelike touch to your audio
                 translations.</p>
         </div>
     </div>
 
-    <!-- Add this new section to your HTML -->
     <div class="new-section">
         <div class="column">
             <h1>Exciting New Features is comming! ✨</h1>
@@ -123,7 +109,6 @@
         </div>
     </div>
 
-    <!-- Add this new section to your HTML -->
     <div class="new-section premium">
         <div class="column">
             <h1>Discover the Power of PDF Reader App! 🚀</h1>
@@ -134,28 +119,10 @@
                 Experience the convenience of managing and reading PDFs, EPUBs, and Markdown files in one place.</p>
             <p>Don't miss out on the latest updates and enhancements. Join our community of satisfied users!</p>
             <p>Download PDF Reader App on <a href="https://play.google.com/store/apps/your-app-package-name"
-                    target="_blank" rel="noopener noreferrer">Google Play</a></p>
+                    target="_blank" rel="noopener noreferrer" class="title-default">Google Play</a></p>
         </div>
     </div>
 
-
-
-
-    <script>
-
-        // Carousel script
-        let currentIndex = 0;
-
-        setInterval(() => {
-            const stepsContainer = document.querySelector('.steps-container');
-            const steps = document.querySelectorAll('.step');
-
-            currentIndex = (currentIndex + 1) % steps.length;
-
-            stepsContainer.style.transition = 'transform 0.5s ease-in-out';
-            stepsContainer.style.transform = 'translateX(' + (-currentIndex * steps[0].clientWidth) + 'px)';
-        }, 5000); 
-    </script>
 </body>
 
 </html>

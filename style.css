@@ -3,6 +3,7 @@ html {
     margin: 0;
     padding: 0;
 }
+
 body {
     border: 0;
     margin: 0;
@@ -27,15 +28,18 @@ p {
 .contact-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #7289da; /* Discord color pallet link background */
-    color: #fff; /* Discord color pallet link text color */
+    background-color: #7289da;
+    /* Discord color pallet link background */
+    color: #fff;
+    /* Discord color pallet link text color */
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .contact-link:hover {
-    background-color: #677bc4; /* Discord color pallet link background on hover */
+    background-color: #677bc4;
+    /* Discord color pallet link background on hover */
 }
 
 
@@ -48,6 +52,10 @@ p {
 }
 
 .parallax-section h1 {
+    color: #7289da;
+}
+
+.title-default {
     color: #7289da;
 }
 
@@ -133,21 +141,23 @@ p {
 }
 
 .step {
-    min-width: 100%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     padding: 20px;
 }
 
-.step img {
+.column {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.column img {
     max-width: 100%;
     height: auto;
-
-    object-fit: cover;
-    margin-right: 20px;
 }
 
 .new-section {
@@ -176,4 +186,23 @@ p {
 
 .new-section p {
     color: white;
+}
+
+.hwoks {
+    display: flex;
+    background-color: #232428;
+}
+
+@media only screen and (max-width: 600px) {
+    .hwoks {
+        flex-direction: column;
+    }
+
+    .step {
+        flex-direction: column;
+    }
+
+    .two-column-section {
+        flex-direction: column;
+    }
 }
