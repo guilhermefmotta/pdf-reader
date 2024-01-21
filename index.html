@@ -12,20 +12,41 @@
 
 <body>
     <div class="parallax-section">
-        <div class="parallax-background"></div>
         <div class="content">
-            <h1>Title in the Center</h1>
-            <!-- <img src="web_home.png" alt="Centered Image" width="300px" height="350"> -->
+            <h1 class="animate__animated animate__backInDown" style="margin-top: 50px;">PDF Reader</h1>
+            <div class="welcome-message animate__animated animate__backInUp">
+                <p>Greetings, PDF enthusiasts! We're thrilled to have you here at <strong>PDF Reader</strong>, your
+                    go-to destination for seamless and enjoyable PDF reading. Whether you're a student, professional, or
+                    just someone who loves diving into digital documents, we've got you covered!</p>
 
+                <p>Join over 10,000 users who have chosen <strong>PDF Reader</strong> for their PDF viewing needs. Thank
+                    you for
+                    being part of our growing community!</p>
+
+                <img src="logo.png" alt="App Image" width="90" height="100"
+                    class="image animate__animated  animate__backInLeft" style="margin-top: 50px;">
+
+                <div class="downloads" style="margin-top:50px">
+                    <p>Discover the power of PDF Reader now!</p>
+                    <a class="contact-link" href="https://github.com/YourUsername/YourApp" target="_blank">Contact Us on
+                        GitHub 📣</a>
+                    <a class="contact-link" href="https://play.google.com/store/apps/your-app-id" target="_blank">Get it
+                        on
+                        Play Store 👈</a>
+                </div>
+
+            </div>
         </div>
     </div>
 
     <div class="two-column-section">
         <div class="column">
-            <img src="web_home.png" alt="App Image">
+            <img src="app_init.jpg" alt="App Image" width="350" height="400"
+                class="image animate__animated  animate__backInLeft">
         </div>
         <div class="column">
-            <p>Experience the beauty of simplicity with our streamlined and clutter-free interface. Navigate
+            <p class="animate__animated  animate__backInRight">Experience the beauty of simplicity with our streamlined
+                and clutter-free interface. Navigate
                 effortlessly through our app, where each interaction is a visual delight. Immerse yourself in stunning
                 animations and a carefully crafted color palette, making every read journey with PDF Reader
                 a visual treat.</p>
@@ -43,28 +64,29 @@
                                 linguistic preferences, ensuring a personalized translation experience.</p>
                         </div>
                         <div class="column">
-                            <img src="5.jpg" alt="Select Language Image">
+                            <img src="5.jpg" alt="Select Language Image" width="350" height="400" class="image">
                         </div>
                     </div>
                     <div class="step">
                         <div class="column">
                             <p>Choose Your Text:</p>
                             <p>Select the specific text you want to translate. Whether it's a phrase, paragraph, or an
-                                entire document, our app makes it easy to pinpoint the content you need.</p>
+                                entire document, our app makes it easy to pinpoint the content you need and click em
+                                translate</p>
                         </div>
                         <div class="column">
-                            <img src="4.jpg" alt="Choose Text Image">
+                            <img src="4.jpg" alt="Choose Text Image" width="350" height="400" class="image">
                         </div>
                     </div>
                     <div class="step">
                         <div class="column">
-                            <p>Click Translate:</p>
+                            <p>Result:</p>
                             <p>Once your text is selected, a convenient translate button will appear. Just click, and
                                 let the magic happen. Watch your text transform seamlessly, bridging language gaps
                                 effortlessly.</p>
                         </div>
                         <div class="column">
-                            <img src="3.jpg" alt="Click Translate Image">
+                            <img src="3.jpg" alt="Click Translate Image" width="350" height="400" class="image">
                         </div>
                     </div>
                 </div>
@@ -74,9 +96,10 @@
 
     <div class="two-column-section">
         <div class="column">
-            <img src="1.jpg" alt="App Image">
+            <img src="1.jpg" alt="App Image" width="350" height="400"
+                class="image animate__animated  animate__backInLeft">
         </div>
-        <div class="column">
+        <div class="column animate__animated  animate__backInRight">
             <p>Elevate your translation experience with [Your App Name]'s Premium Version. Enjoy enhanced translation
                 capabilities, as our advanced algorithms provide a superior rendition of your text. Say goodbye to
                 language barriers with the power of neural voices, adding a natural and lifelike touch to your audio
@@ -87,7 +110,7 @@
     <!-- Add this new section to your HTML -->
     <div class="new-section">
         <div class="column">
-            <p>Exciting New Features!</p>
+            <h1>Exciting New Features is comming! ✨</h1>
             <p>We are thrilled to announce the addition of exciting new features to our PDF Reader app. Now, enjoy the
                 convenience of reading EPUB and Markdown (MD) files seamlessly within our app.</p>
             <p>Whether you prefer the rich formatting options of EPUB or the simplicity of Markdown, our PDF Reader app
@@ -101,9 +124,9 @@
     </div>
 
     <!-- Add this new section to your HTML -->
-    <div class="new-section">
+    <div class="new-section premium">
         <div class="column">
-            <p>Discover the Power of PDF Reader App!</p>
+            <h1>Discover the Power of PDF Reader App! 🚀</h1>
             <p>Are you ready to elevate your reading experience? Find our PDF Reader app on the Google Play Store and
                 unlock a world of possibilities. Download now and enjoy seamless reading, advanced features, and a
                 user-friendly interface.</p>
@@ -119,13 +142,6 @@
 
 
     <script>
-        // Simple parallax effect using JavaScript
-        window.addEventListener('scroll', function () {
-            const parallaxBackground = document.querySelector('.parallax-background');
-            const offset = window.pageYOffset;
-            parallaxBackground.style.backgroundPositionY = offset * 0.7 + 'px';
-        });
-
 
         // Carousel script
         let currentIndex = 0;
